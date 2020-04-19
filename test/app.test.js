@@ -1,7 +1,13 @@
-import app from '../src/app';
+import React from "react";
+import { shallow } from "enzyme";
 
-describe('app', function() {
-  it('does nothing', function() {
-    expect(true).toBe(true);
+import App from "../src/app";
+import Multiples from "../src/containers/Multiples";
+
+describe("app", function() {
+  it("should render Multiples", function() {
+    const component = shallow(<App />);
+
+    expect(component.find(Multiples)).toHaveLength(1);
   });
 });

@@ -1,6 +1,8 @@
 // source goes here
-const app = function() {
-  console.log('hello from app!');
-};
+import React from "react";
 
-export default app;
+import Multiples from "./containers/Multiples";
+
+const App = () => <Multiples />
+
+export default App;
